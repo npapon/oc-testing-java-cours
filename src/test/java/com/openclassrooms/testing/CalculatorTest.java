@@ -5,7 +5,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 import java.text.MessageFormat;
 import java.time.Duration;
 import java.time.Instant;
-import java.util.Set;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
@@ -114,19 +113,6 @@ public class CalculatorTest {
 
         // Assert
         // ...
-    }
-
-    @Test
-    public void testRetourneLeDetailDesChiffresDuNombre() {
-        // GIVEN
-        int nombre = 56565;
-        // WHEN
-        Set<Integer> chiffres = calculatorUnderTest.retourneLeDetailDesChiffresDuNombre( nombre );
-        // THEN
-        // On peut utiliser directement une méthode d'assertJ pour vérifier
-        // que la collection contient ces chiffres dans n'importe quel ordre
-        assertThat( chiffres ).containsExactlyInAnyOrder( 5, 7, 8, 9 );
-
     }
 
 }
